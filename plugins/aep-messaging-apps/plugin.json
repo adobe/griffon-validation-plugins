@@ -1,0 +1,10 @@
+{
+  "category": "Push Messaging",
+  "displayName": "Apps Configured",
+  "description": "Validates that the apps that are stored in the profile have been created",
+  "namespace": "aep-messaging-apps",
+  "src": "dist/index.js",
+  "type": "validation",
+  "version": "0.0.1",
+  "visibility": ["PUBLIC"]
+}

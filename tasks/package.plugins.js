@@ -24,6 +24,6 @@ plugins.forEach((plugin) => {
   };
 
   execSync(`rm -rf ${packageDir}/dist`);
-  execSync('npx babel . -d dist', cwdOptions);
+  execSync('npx babel . -d dist --ignore="test.js"', cwdOptions);
   execSync('npx @adobe/griffon-packager', cwdOptions);
 });

@@ -1,0 +1,10 @@
+{
+  "category": "Push Messaging",
+  "displayName": "Push Sent to Profile",
+  "description": "Validates that the client correctly sends the data to the profile",
+  "namespace": "aep-messaging-profile",
+  "src": "dist/index.js",
+  "type": "validation",
+  "version": "0.0.1",
+  "visibility": ["PUBLIC"]
+}
