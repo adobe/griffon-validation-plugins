@@ -24,16 +24,14 @@ import { ValidationPluginResult } from 'types/validationPlugin';
   const valid = configurationEvents.some((event) => {
     const experienceCloud =
       event.payload.ACPExtensionEventData['experienceCloud.org'];
-    const server =
-      event.payload.ACPExtensionEventData['experienceCloud.server'];
     const sessionTimeout =
       event.payload.ACPExtensionEventData['lifecycle.sessionTimeout'];
-    return experienceCloud && server && sessionTimeout;
+    return experienceCloud && sessionTimeout;
   });
 
   const message = valid
     ? 'Valid! Adobe Core Extension has been configured!'
-    : 'Missing required configuration for Adobe Core';
+    : 'Missing required experienceCloud.org or lifecycle.sessionTimeout configuration for Adobe Core';
   const errors = valid ? [] : configurationEvents.map((event) => event.uuid);
   return {
     events: errors,

@@ -11,7 +11,6 @@ const validConfiguration = configuration.mock({
   payload: {
     ACPExtensionEventData: {
       'experienceCloud.org': '123',
-      'experienceCloud.server': '123',
       'lifecycle.sessionTimeout': '123'
     }
   }
@@ -21,14 +20,14 @@ const invalidConfiguration = configuration.mock({
   uuid: '2',
   payload: {
     ACPExtensionEventData: {
-      'experienceCloud.org': '123',
-      'experienceCloud.server': ''
+      'experienceCloud.org': '',
+      'lifecycle.sessionTimeout': '123'
     }
   }
 }) as Configuration;
 
 describe('Adobe Core Configuration', () => {
-  it('should return success when cpre has been configured correctly in at least one event', () => {
+  it('should return success when core has been configured correctly in at least one event', () => {
     const result: ValidationPluginResult = plugin([
       invalidConfiguration,
       validConfiguration
