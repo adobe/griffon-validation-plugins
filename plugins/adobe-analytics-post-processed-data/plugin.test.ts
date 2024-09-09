@@ -25,7 +25,7 @@ const lifecycleStartEvent = lifecycleStart.mock({
   uuid: '2',
   annotations: [
     {
-      type: 'analytics',
+      type: 'analytics-with-edge',
       uuid: '2',
       payload: {
         hitDebugMessages: 'Hello there!'
