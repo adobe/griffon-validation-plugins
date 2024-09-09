@@ -33,7 +33,7 @@ import { ValidationPluginResult } from '../../types/validationPlugin';
   for (let i = 0; i < analyticsTrackEvents.length; i++) {
     const analyticsTrackEvent = analyticsTrackEvents[i];
     const analyticsAnnotation = analyticsTrackEvent.annotations.find(
-      (annotation) => annotation.type === 'analytics'
+      (annotation) => annotation.type.startsWith('analytics')
     );
     if (
       !analyticsAnnotation ||
