@@ -1,10 +1,10 @@
 {
-    "category": "Adobe Journey Optimizer - Decisioning",
-    "displayName": "Adobe Journey Optimize Request Validation",
-    "description": "Verifies the Adobe Journey Optimize Requests all have a corresponding response and valid tracking types are used.",
+    "category": "Offer Decisioning and Target",
+    "displayName": "Offer Decisioning and Target Request Validation",
+    "description": "Verifies the Offer Decisioning and Target Requests all have a corresponding response and valid tracking types are used.",
     "namespace": "aep-optimize-request",
     "src": "dist/index.js",
     "type": "validation",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "visibility": ["PUBLIC"]
 }

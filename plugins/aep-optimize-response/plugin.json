@@ -1,10 +1,10 @@
 {
-  "category": "Adobe Journey Optimizer - Decisioning",
-  "displayName": "Adobe Journey Optimize Response Validation",
-  "description": "Verifies the Adobe Journey Optimize requested scopes have a matching response",
+  "category": "Offer Decisioning and Target",
+  "displayName": "Offer Decisioning and Target Response Validation",
+  "description": "Verifies the Offer Decisioning and Target requested scopes have a matching response",
   "namespace": "aep-optimize-response",
   "src": "dist/index.js",
   "type": "validation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "visibility": ["PUBLIC"]
 }
