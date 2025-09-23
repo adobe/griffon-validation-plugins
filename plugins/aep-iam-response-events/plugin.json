@@ -1,10 +1,10 @@
 {
   "category": "Adobe Journey Optimizer - In-App Messaging",
-  "displayName": "Adobe Journey Optimizer In App Messaging Response Payload Validation",
-  "description": "Validates that Adobe Journey Optimizer In App Messaging Response payloads are valid",
+  "displayName": "Adobe Journey Optimizer Messaging Response Payload Validation",
+  "description": "Validates that Adobe Journey Optimizer Messaging Response payloads are valid",
   "namespace": "adobe-iam-response-events",
   "src": "dist/index.js",
   "type": "validation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "visibility": ["PUBLIC"]
 }

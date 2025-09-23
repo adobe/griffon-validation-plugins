@@ -73,7 +73,10 @@ import { ValidationPluginResult } from '../../types/validationPlugin';
     return result;
   }, [] as string[]);
 
-  const isInvalid = missingScopes.length || invalidScopes.length;
+  const isInvalid =
+    !personalizationRequests.length ||
+    missingScopes.length ||
+    invalidScopes.length;
 
   return isInvalid
     ? {

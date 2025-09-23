@@ -1,10 +1,10 @@
 {
   "category": "Adobe Journey Optimizer - In-App Messaging",
-  "displayName": "Adobe Journey Optimizer In App Messaging Request Scope Validation",
-  "description": "Validates that Adobe Journey Optimizer In App Messaging Response payloads are returned for each requested scope",
+  "displayName": "Adobe Journey Optimizer Messaging Request Scope Validation",
+  "description": "Validates that Adobe Journey Optimizer Messaging Response payloads are returned for each requested scope",
   "namespace": "adobe-iam-request",
   "src": "dist/index.js",
   "type": "validation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "visibility": ["PUBLIC"]
 }

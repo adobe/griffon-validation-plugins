@@ -22,6 +22,15 @@ import { ValidationPluginResult } from '../../types/validationPlugin';
     events
   ) as IAMPersonalizationResponse[];
 
+  if (!personalizationResponses.length) {
+    return {
+      message:
+        'Unable to detect any In App Messaging Response events. Please ensure responses are received for your personalization request.',
+      result: 'not matched',
+      events: []
+    };
+  }
+
   const errors = personalizationResponses.reduce(
     (result, { payload, uuid }) => {
       const hasInvalidContent = payload.items?.some((item) => {

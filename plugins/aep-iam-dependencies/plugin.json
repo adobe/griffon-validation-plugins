@@ -1,10 +1,10 @@
 {
   "category": "Adobe Journey Optimizer - In-App Messaging",
-  "displayName": "Adobe Journey Optimizer In App Messaging Dependencies",
-  "description": "Validates Adobe Journey Optimizer In App Messaging dependency extensions have been installed",
+  "displayName": "Adobe Journey Optimizer Messaging Dependencies",
+  "description": "Validates Adobe Journey Optimizer Messaging dependency extensions have been installed",
   "namespace": "aep-iam-dependencies",
   "src": "dist/index.js",
   "type": "validation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "visibility": ["PUBLIC"]
 }
