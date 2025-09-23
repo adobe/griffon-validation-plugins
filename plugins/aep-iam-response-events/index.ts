@@ -25,7 +25,7 @@ import { ValidationPluginResult } from '../../types/validationPlugin';
   if (!personalizationResponses.length) {
     return {
       message:
-        'Unable to detect any In App Messaging Response events. Please ensure responses are received for your personalization request.',
+        'Unable to detect any Messaging Response events. Please ensure responses are received for your personalization request.',
       result: 'not matched',
       events: []
     };
