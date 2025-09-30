@@ -1,10 +1,10 @@
 {
   "category": "Adobe Journey Optimizer - In-App Messaging",
-  "displayName": "Adobe Journey Optimizer In App Messaging Consent",
+  "displayName": "Adobe Journey Optimizer Messaging Consent",
   "description": "Validates Consent is registered and configured correctly for use in AJO Messaging",
   "namespace": "aep-iam-consent",
   "src": "dist/index.js",
   "type": "validation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "visibility": ["PUBLIC"]
 }

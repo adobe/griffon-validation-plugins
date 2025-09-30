@@ -32,6 +32,15 @@ import { ValidationPluginResult } from '../../types/validationPlugin';
     events
   ) as IAMPersonalizationResponse[];
 
+  if (!personalizationRequests.length) {
+    return {
+      result: 'not matched',
+      message:
+        'No personalization requests detected. Please send a personalization request with decisionScopes.',
+      events: []
+    };
+  }
+
   const requestScopes = personalizationRequests.map((request) => ({
     uuid: request.uuid,
     scopes:
